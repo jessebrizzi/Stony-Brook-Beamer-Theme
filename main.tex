@@ -1,0 +1,58 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+\usepackage{fixltx2e}
+
+% Stony Brook Theme
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\definecolor{darkred}{rgb}{0.757,0.071,0.184}
+\usepackage{multimedia}
+\addtobeamertemplate{frametitle}{\vskip2ex}{}
+\setbeamertemplate{itemize item}{\color{black}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{darkred}$\blacktriangleright$}
+\setbeamertemplate{itemize subsubitem}{\color{gray}$\blacksquare$}
+\setbeamertemplate{sections/subsections in toc}[sections numbered]
+\setbeamertemplate{frametitle}{\vspace{4mm}\vbox{\hsize=10cm\bfseries\strut\insertframetitle\strut}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{background}}
+
+% presentation info
+\title{Stony Brook Beamer Theme}
+\subtitle{Red, Red Everywhere...}
+\author{Jesse Brizzi}
+\date{MM/DD/YYYY}
+
+\begin{document}
+
+% title slide with different logos in head
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{backgroundTitle}}
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+
+% Slide
+\begin{frame}{Slide}
+\begin{itemize}
+    \item Stuff
+    \item More Stuff
+    \begin{itemize}
+        \item sub stuff
+    \end{itemize}
+    \item I think you get it
+    \begin{itemize}
+        \item sub stuff
+        \begin{itemize}
+            \item sub sub stuff
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}
